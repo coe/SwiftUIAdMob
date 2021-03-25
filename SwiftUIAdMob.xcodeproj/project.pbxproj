@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,27 @@
 		579F635A260C6738007011C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F6359260C6738007011C8 /* ContentView.swift */; };
 		579F635C260C673C007011C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579F635B260C673C007011C8 /* Assets.xcassets */; };
 		579F635F260C673C007011C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579F635E260C673C007011C8 /* Preview Assets.xcassets */; };
+		579F6372260C67D1007011C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F6371260C67D1007011C8 /* AppDelegate.swift */; };
+		579F6376260C69B3007011C8 /* ContainedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F6375260C69B3007011C8 /* ContainedAdViewController.swift */; };
+		579F6379260C69BE007011C8 /* AdViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F6378260C69BE007011C8 /* AdViewController.storyboard */; };
+		579F637E260C6B1D007011C8 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F637D260C6B1D007011C8 /* AdViewController.swift */; };
+		D81E55F182947285DF258B81 /* Pods_SwiftUIAdMob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1EF2B3868A866E48F0CD5A /* Pods_SwiftUIAdMob.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B17BC115A65188E361928FB /* Pods-SwiftUIAdMob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAdMob.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIAdMob/Pods-SwiftUIAdMob.debug.xcconfig"; sourceTree = "<group>"; };
 		579F6354260C6738007011C8 /* SwiftUIAdMob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAdMob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579F6357260C6738007011C8 /* SwiftUIAdMobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAdMobApp.swift; sourceTree = "<group>"; };
 		579F6359260C6738007011C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		579F635B260C673C007011C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		579F635E260C673C007011C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		579F6360260C673C007011C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579F6371260C67D1007011C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		579F6375260C69B3007011C8 /* ContainedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainedAdViewController.swift; sourceTree = "<group>"; };
+		579F6378260C69BE007011C8 /* AdViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdViewController.storyboard; sourceTree = "<group>"; };
+		579F637D260C6B1D007011C8 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		5DE95A9C87F2BE067767DA19 /* Pods-SwiftUIAdMob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAdMob.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIAdMob/Pods-SwiftUIAdMob.release.xcconfig"; sourceTree = "<group>"; };
+		CA1EF2B3868A866E48F0CD5A /* Pods_SwiftUIAdMob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIAdMob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81E55F182947285DF258B81 /* Pods_SwiftUIAdMob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4E70B4CD674952DD111073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA1EF2B3868A866E48F0CD5A /* Pods_SwiftUIAdMob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		579F634B260C6738007011C8 = {
 			isa = PBXGroup;
 			children = (
 				579F6356260C6738007011C8 /* SwiftUIAdMob */,
 				579F6355260C6738007011C8 /* Products */,
+				7E9E9D9B511F9BAA6F4BAB39 /* Pods */,
+				0F4E70B4CD674952DD111073 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +80,10 @@
 				579F635B260C673C007011C8 /* Assets.xcassets */,
 				579F6360260C673C007011C8 /* Info.plist */,
 				579F635D260C673C007011C8 /* Preview Content */,
+				579F6371260C67D1007011C8 /* AppDelegate.swift */,
+				579F6375260C69B3007011C8 /* ContainedAdViewController.swift */,
+				579F6378260C69BE007011C8 /* AdViewController.storyboard */,
+				579F637D260C6B1D007011C8 /* AdViewController.swift */,
 			);
 			path = SwiftUIAdMob;
 			sourceTree = "<group>";
@@ -69,6 +96,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7E9E9D9B511F9BAA6F4BAB39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B17BC115A65188E361928FB /* Pods-SwiftUIAdMob.debug.xcconfig */,
+				5DE95A9C87F2BE067767DA19 /* Pods-SwiftUIAdMob.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 579F6363260C673C007011C8 /* Build configuration list for PBXNativeTarget "SwiftUIAdMob" */;
 			buildPhases = (
+				87D3B7754850D221F5B4C63D /* [CP] Check Pods Manifest.lock */,
 				579F6350260C6738007011C8 /* Sources */,
 				579F6351260C6738007011C8 /* Frameworks */,
 				579F6352260C6738007011C8 /* Resources */,
+				A66A0EFA7FC279B661FC4064 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,17 +165,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				579F635F260C673C007011C8 /* Preview Assets.xcassets in Resources */,
+				579F6379260C69BE007011C8 /* AdViewController.storyboard in Resources */,
 				579F635C260C673C007011C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87D3B7754850D221F5B4C63D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIAdMob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A66A0EFA7FC279B661FC4064 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAdMob/Pods-SwiftUIAdMob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAdMob/Pods-SwiftUIAdMob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAdMob/Pods-SwiftUIAdMob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		579F6350260C6738007011C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579F6372260C67D1007011C8 /* AppDelegate.swift in Sources */,
+				579F637E260C6B1D007011C8 /* AdViewController.swift in Sources */,
+				579F6376260C69B3007011C8 /* ContainedAdViewController.swift in Sources */,
 				579F635A260C6738007011C8 /* ContentView.swift in Sources */,
 				579F6358260C6738007011C8 /* SwiftUIAdMobApp.swift in Sources */,
 			);
@@ -264,6 +348,7 @@
 		};
 		579F6364260C673C007011C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B17BC115A65188E361928FB /* Pods-SwiftUIAdMob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -276,6 +361,63 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.hyuga.SwiftUIAdMob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -285,6 +427,7 @@
 		};
 		579F6365260C673C007011C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE95A9C87F2BE067767DA19 /* Pods-SwiftUIAdMob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,6 +439,63 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.hyuga.SwiftUIAdMob;
 				PRODUCT_NAME = "$(TARGET_NAME)";

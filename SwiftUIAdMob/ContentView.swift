@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ContainedAdViewController(rootView:
+                                    Text("Hello, world!").padding()
+        )
+        
     }
 }
 

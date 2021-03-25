@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gne-fQ-A1e">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ad View Controller-->
+        <scene sceneID="bU3-Sz-LLg">
+            <objects>
+                <viewController id="gne-fQ-A1e" customClass="AdViewController" customModule="SwiftUIAdMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iQ5-kM-1IJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIO-48-H5v" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Z3d-Dg-UXg"/>
+                                    <constraint firstAttribute="width" constant="414" id="qCY-ae-16e"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTF-bc-utb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                                <connections>
+                                    <segue destination="4HA-ut-RRw" kind="embed" destinationCreationSelector="embedHostingController:" id="cdy-Hj-anO"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fUK-Hb-hXv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JIO-48-H5v" firstAttribute="top" secondItem="tTF-bc-utb" secondAttribute="bottom" id="LrD-91-oWq"/>
+                            <constraint firstItem="JIO-48-H5v" firstAttribute="bottom" secondItem="fUK-Hb-hXv" secondAttribute="bottom" id="WET-FC-06X"/>
+                            <constraint firstItem="tTF-bc-utb" firstAttribute="top" secondItem="fUK-Hb-hXv" secondAttribute="top" id="d83-Zx-l13"/>
+                            <constraint firstItem="tTF-bc-utb" firstAttribute="leading" secondItem="fUK-Hb-hXv" secondAttribute="leading" id="mVP-Ba-XOU"/>
+                            <constraint firstItem="JIO-48-H5v" firstAttribute="centerX" secondItem="iQ5-kM-1IJ" secondAttribute="centerX" id="umQ-om-5b4"/>
+                            <constraint firstItem="fUK-Hb-hXv" firstAttribute="trailing" secondItem="tTF-bc-utb" secondAttribute="trailing" id="y6H-Ut-L7G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerHeightConstraint" destination="Z3d-Dg-UXg" id="q7v-NG-Ug9"/>
+                        <outlet property="bannerView" destination="JIO-48-H5v" id="3jJ-OK-6mT"/>
+                        <outlet property="bannerWidthConstraint" destination="qCY-ae-16e" id="Mx5-2q-6bC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYU-Hk-iHR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135" y="-86"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="svt-zR-h0t">
+            <objects>
+                <hostingController id="4HA-ut-RRw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vww-17-3ll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="-99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
